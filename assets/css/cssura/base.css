@@ -1,0 +1,41 @@
+body {
+  font-family: Poppins,Helvetica,Arial,sans-serif;
+  font-weight: 400;
+  background-color: var(--color-gray);
+  margin: 0;
+}
+
+body * + * {
+  margin-top: 1.5em;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+img {
+  margin: 0;
+  max-width: 100%;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: inherit;
+  margin: 0;
+  padding: 1em 0;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 2em;
+  text-indent: 2em;
+}
+
+p + p {
+  margin-top: 1.5em;
+}

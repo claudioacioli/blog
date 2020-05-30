@@ -1,0 +1,76 @@
+.text--primary {
+  color: var(--color-primary);
+}
+
+.text--secondary {
+  color: var(--color-secondary);
+}
+
+.text--success {
+  color: var(--color-success);
+}
+
+.text--danger {
+  color: var(--color-danger);
+}
+
+.text--warning {
+  color: var(--color-warning);
+}
+
+.text--light {
+  color: var(--color-light);
+}
+
+.text--dark {
+  color: var(--color-dark);
+}
+
+.text--white {
+  color: var(--color-white);
+}
+
+.text--black {
+  color: var(--color-black);
+}
+
+.bg--primary {
+  background-color: var(--color-primary);
+}
+
+.bg--secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg--success {
+  background-color: var(--color-success)!important;
+}
+
+.bg--danger {
+  background-color: var(--color-danger);
+}
+
+.bg--warning {
+  background-color: var(--color-warning);
+}
+
+.bg--light {
+  background-color: var(--color-light)!important;
+}
+
+.bg--dark {
+  background-color: var(--color-dark);
+}
+
+.bg--white {
+  background-color: var(--color-white);
+}
+
+.bg--black {
+  background-color: var(--color-black)!important;
+}
+
+.bg--grad-black {
+  background: linear-gradient(84deg, rgba(68,68,68,1) 0%, rgba(51,51,48,1) 35%, rgba(0,0,0,1) 100%) !important;
+  color: white!important;
+}
