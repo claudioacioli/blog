@@ -15,16 +15,62 @@
 }
 
 .main {
-  margin: 0 auto; 
+  margin: 120px auto 0 auto; 
   max-width: 1280px;
-  grid-area: main;
+  grid-area: main; 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-auto-rows: 1fr;
+  grid-gap: 1em;
+  grid-auto-flow: dense;
+  padding: 0 1em 1em;
+}
+
+@media(min-width: 50em) {
+  .main {
+    padding: 0;
+  }
+}
+
+.card > figure {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 100%;
+}
+
+.card:hover {
+  text-decoration: none;
+}
+
+.card > figure > img {
+  flex: 1;
+  object-fit: cover;
+  width: 100%;
+  border-top-left-radius: .25em;
+  border-top-right-radius: .25em;
+}
+
+.card > figure > figcaption {
+  margin: 0;
+  padding: 0.3em 0.8em;
+  background-color: rgba(0,0,0,1);
+  color: #fff;
+  text-align: right;
+  border-bottom-left-radius: .25em;
+  border-bottom-right-radius: .25em;
+}
+
+.card.last-post {
+  grid-row: span 2;
+  grid-column: span 2;
+  font-size: 2em;
 }
 
 .footer {
   margin-top: 0;
   grid-area: footer;
 }
-
 
 .post-main {
   margin: 100px auto 0 auto; 
@@ -40,7 +86,7 @@
   padding: 0 1em 1em;
 }
 
-@media(min-width: 35em) {
+@media(min-width: 50em) {
   .post-main {
     max-width: 1280px;
     grid-template-columns: 2fr 1fr;
