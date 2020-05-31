@@ -1,4 +1,4 @@
-### Udacity CSS Blog Project
+# Udacity CSS Blog Project
 
 This is a Udacity project for the FrontEnd NanoDegree. 
 This is a template blog make with CSS and HTML.
