@@ -130,3 +130,11 @@
   border-radius: 50%; 
   object-fit: cover;
 }
+
+.blockquote {
+  margin: 1em 0;
+  font-size: 1.5em;
+  line-height: 1.75em;
+  border-left: .275em solid black;
+  padding-left: 1em;
+}
