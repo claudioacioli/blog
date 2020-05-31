@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Claudio Acioli</title>
-    <link rel="stylesheet" href="/assets/css/cssura/main.css">
-    <link rel="stylesheet" href="/assets/css/blog.css">
+    <link rel="stylesheet" href="../assets/css/cssura/main.css">
+    <link rel="stylesheet" href="../assets/css/blog.css">
   </head>
   <body>
     <header class="header appbar appbar--fixed">
       <div class="container toolbar">
-        <img src="/assets/images/logo.png" alt="Acioli's blog">
-        <a class="button button--primary" href="/index.html">Home</a>
+        <img src="../assets/images/logo.png" alt="Acioli's blog">
+        <a class="button button--primary" href="../index.html">Home</a>
       </div>
     </header>
     
     <main class="post-main">
       <article class="post-main__article">
         <h1>Setup Hacker</h1>
-        <img class="post-image" src="/assets/images/setup.jpg">
+        <img class="post-image" src="../assets/images/setup.jpg">
         <p class="mt--1">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
           Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -127,7 +127,7 @@
         document.addEventListener("DOMContentLoaded", function() {
           const post = getPost(url.searchParams.get("p"));
           titleElement.textContent = post.title;
-          imageElement.src = "/assets/images/" + post.img;
+          imageElement.src = "../assets/images/" + post.img;
         });
 
       })();
