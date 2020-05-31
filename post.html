@@ -20,8 +20,7 @@
         <h1>Setup Hacker</h1>
         <img 
           class="post-image" 
-          src="./assets/images/0d88ac32d2963d2da27c2da2dfe2522b.jpg"
-          srcset="./assets/images/d51e56eb9eed1736ddbc00592f4e86a4.jpg"
+          src="./assets/images/setup.jpg"
         >
         <p class="mt--1">
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
@@ -71,10 +70,10 @@
           </div>
           <div class="box__body">
             <ol class="mt-0">
-              <li><a href="#">Javascript & CSS</a></li>
-              <li><a href="#">Flask the new Way</a></li>
-              <li><a href="#">Microservices</a></li>
-              <li><a href="#">Java the better way</a></li>
+              <li><a href="?p=7">Setup Hacker</a></li>
+              <li><a href="?p=6">Safari PWA tricks!</a></li>
+              <li><a href="?p=5">Time to code!</a></li>
+              <li><a href="?p=4">Take a Rest!</a></li>
             </ol>
           </div>
         </div>
@@ -102,5 +101,40 @@
         
       </div>
     </footer>
+    <script>
+      (function() {
+        
+        const url = new URL(location.href);
+        const titleElement = document.querySelector("h1");
+        const imageElement = document.querySelector(".post-image");
+
+        getPost = function(id) {
+          switch(id) {
+            case "1":
+              return {"title":"Vim is the better editor?", "img":"code.jpeg"};
+            case "2":
+              return {"title":"Mechanic Keyboard?", "img":"key.jpeg"};
+            case "3":
+              return {"title":"Programming to IOS", "img":"mac.jpeg"};
+            case "5":
+              return {"title":"Time to code", "img":"table.jpeg"};
+            case "6":
+              return {"title":"Safari PWA tricks!", "img":"iphone.jpeg"};
+            case "7":
+              return {"title":"Setup Hacker", "img":"setup.jpg"};
+            case "4":
+              return {"title":"Take a Rest!", "img":"space.jpeg"};
+          }
+        };
+
+        document.addEventListener("DOMContentLoaded", function() {
+          
+          const post = getPost(url.searchParams.get("p"));
+          titleElement.textContent = post.title;
+          imageElement.src = "./assets/images/" + post.img;
+        });
+
+      })();
+    </script>
   </body>
 </html>
