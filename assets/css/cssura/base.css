@@ -31,9 +31,15 @@ h1 {
 
 p {
   margin: 0;
-  font-size: 20px;
+  font-size: calc(1vw + 1em);
   line-height: 2em;
   text-indent: 2em;
+}
+
+@media(min-width: 35em) {
+  p {
+    font-size: 1.375em;
+  }
 }
 
 p + p {

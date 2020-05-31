@@ -19,7 +19,7 @@
   --color-light-danger: rgba(253,57,122,.1);
   --color-light-warning: rgba(255,184,34,.1);
   
-  font-size: calc(1vw + 0.6em);
+  font-size: calc(1vw + .8em);
   box-sizing: border-box;
 
 }
