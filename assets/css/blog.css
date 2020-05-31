@@ -67,3 +67,11 @@
   margin:0 auto;
   border-radius: 10em;
 }
+
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  flex-wraper: no-wrap;
+  justify-content: space-between;
+  align-items: center;
+}
