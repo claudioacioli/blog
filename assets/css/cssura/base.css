@@ -49,3 +49,7 @@ p + p {
 .text--center {
   text-align: center;
 }
+
+.b--0 {
+  border-width: 0;
+}
